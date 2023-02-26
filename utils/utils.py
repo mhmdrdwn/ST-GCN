@@ -84,7 +84,7 @@ def readcsv(name):
 
 
 def get_know_road():
-    allroad = readcsv("data//known_road.csv")
+    allroad = readcsv("/kaggle/working/ST-GCN/data//known_road.csv")
     all = []
     for item in allroad:
         all.append(item[0])
@@ -92,7 +92,7 @@ def get_know_road():
 
 
 def get_predict_road():
-    allroad = readcsv("data//predict_road.csv")
+    allroad = readcsv("/kaggle/working/ST-GCN/data//predict_road.csv")
     all = []
     for item in allroad:
         all.append(item[0])
