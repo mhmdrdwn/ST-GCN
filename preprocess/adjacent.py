@@ -11,7 +11,7 @@ num_predict = len(predict_road)
 # 邻接矩阵
 def get_adjacent_matrix():
     adj = np.zeros([num_known, num_known])
-    csvFile = open("data//roadnet.csv", "r", encoding='UTF-8')
+    csvFile = open("/kaggle/working/ST-GCN/data//roadnet.csv", "r", encoding='UTF-8')
     reader = csv.reader(csvFile)
     for item in reader:
         if reader.line_num == 1:
@@ -32,7 +32,7 @@ def get_predict_adajent():
     adj_predict = dict()
     for road in predict_road:
         adj_predict[road] = set()
-    csvFile = open("..//data//roadnet.csv", "r", encoding='UTF-8')
+    csvFile = open("/kaggle/working/ST-GCN/data//roadnet.csv", "r", encoding='UTF-8')
     reader = csv.reader(csvFile)
     for item in reader:
         if reader.line_num == 1:
