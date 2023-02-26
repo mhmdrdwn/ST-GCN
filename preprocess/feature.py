@@ -20,7 +20,7 @@ external_data = True
 
 
 def missing_data():
-    row_data = pd.read_csv(r'/kaggle/working/ST-GCN/data//features_%smin.csv' % time, header=None)
+    row_data = pd.read_csv(r'/kaggle/working/ST-GCN/data//V_%smin.csv' % time, header=None)
     data = np.mat(row_data, dtype=np.float32)
     print(data.shape)
     return data
